@@ -68,66 +68,40 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="Parts" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
-<package name="SOT-23-6">
-<wire x1="-1.5" y1="0.85" x2="1.5" y2="0.85" width="0.127" layer="51"/>
-<wire x1="1.5" y1="0.85" x2="1.5" y2="-0.85" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.85" x2="-1.5" y2="-0.85" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-0.85" x2="-1.5" y2="0.85" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="0.85" x2="-1.5" y2="0.85" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="-0.85" x2="-1.5" y2="-0.85" width="0.127" layer="21"/>
-<wire x1="1.5" y1="0.85" x2="1.4" y2="0.85" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.85" x2="1.4" y2="-0.85" width="0.127" layer="21"/>
-<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="3" x="0.95" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="4" x="0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="5" x="0" y="1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="6" x="-0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
-<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
-<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
-<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
-<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
-<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
-<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
+<package name="2*6">
+<wire x1="-5.27" y1="1" x2="0.73" y2="1" width="0.127" layer="21"/>
+<wire x1="0.73" y1="1" x2="0.73" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.73" y1="-1" x2="-5.27" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5.27" y1="-1" x2="-5.27" y2="1" width="0.127" layer="21"/>
+<pad name="P$1" x="3" y="1" drill="0.6" diameter="0.8128"/>
+<pad name="P$2" x="3" y="-1" drill="0.6" diameter="0.8128"/>
+<wire x1="0.635" y1="0.635" x2="2.54" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-0.635" x2="2.54" y2="-0.635" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="AP3211">
-<wire x1="7.62" y1="20.32" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="22.86" y2="5.08" width="0.254" layer="94"/>
-<wire x1="22.86" y1="5.08" x2="22.86" y2="20.32" width="0.254" layer="94"/>
-<wire x1="22.86" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
-<pin name="BS" x="27.94" y="17.78" length="middle" rot="R180"/>
-<pin name="GND" x="15.24" y="0" length="middle" rot="R90"/>
-<pin name="FB" x="27.94" y="7.62" length="middle" rot="R180"/>
-<pin name="EN" x="2.54" y="7.62" length="middle"/>
-<pin name="IN" x="2.54" y="17.78" length="middle"/>
-<pin name="SW" x="27.94" y="12.7" length="middle" rot="R180"/>
+<symbol name="2X6">
+<wire x1="-3" y1="2" x2="3" y2="2" width="0.254" layer="94"/>
+<wire x1="3" y1="2" x2="3" y2="-2" width="0.254" layer="94"/>
+<wire x1="3" y1="-2" x2="-3" y2="-2" width="0.254" layer="94"/>
+<wire x1="-3" y1="-2" x2="-3" y2="2" width="0.254" layer="94"/>
+<pin name="P$1" x="8" y="2" length="middle" rot="R180"/>
+<pin name="P$2" x="8" y="-2" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AP3211">
+<deviceset name="C-TYPE32.768">
 <gates>
-<gate name="G$1" symbol="AP3211" x="2.54" y="10.16"/>
+<gate name="G$1" symbol="2X6" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT-23-6">
+<device name="" package="2*6">
 <connects>
-<connect gate="G$1" pin="BS" pad="1"/>
-<connect gate="G$1" pin="EN" pad="4"/>
-<connect gate="G$1" pin="FB" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="5"/>
-<connect gate="G$1" pin="SW" pad="6"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
