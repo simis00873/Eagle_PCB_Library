@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -68,66 +68,73 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="Parts" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
-<package name="SOT-23-6">
-<wire x1="-1.5" y1="0.85" x2="1.5" y2="0.85" width="0.127" layer="51"/>
-<wire x1="1.5" y1="0.85" x2="1.5" y2="-0.85" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.85" x2="-1.5" y2="-0.85" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-0.85" x2="-1.5" y2="0.85" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="0.85" x2="-1.5" y2="0.85" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="-0.85" x2="-1.5" y2="-0.85" width="0.127" layer="21"/>
-<wire x1="1.5" y1="0.85" x2="1.4" y2="0.85" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.85" x2="1.4" y2="-0.85" width="0.127" layer="21"/>
-<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="3" x="0.95" y="-1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="4" x="0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="5" x="0" y="1.25" dx="0.6" dy="0.8" layer="1"/>
-<smd name="6" x="-0.95" y="1.25" dx="0.6" dy="0.8" layer="1"/>
-<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
-<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
-<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
-<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
-<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
-<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
+<package name="PBLT_7P_5.08MM">
+<wire x1="0" y1="0" x2="0" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="5" width="0.127" layer="21"/>
+<wire x1="0" y1="5" x2="0" y2="7" width="0.127" layer="21"/>
+<wire x1="35.5" y1="7" x2="35.5" y2="5" width="0.127" layer="21"/>
+<pad name="P$1" x="2.51" y="3.5" drill="1.6" diameter="3.5"/>
+<wire x1="35.5" y1="5" x2="35.5" y2="1" width="0.127" layer="21"/>
+<wire x1="35.5" y1="1" x2="35.5" y2="0" width="0.127" layer="21"/>
+<wire x1="35.5" y1="7" x2="0" y2="7" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="35.5" y2="0" width="0.127" layer="21"/>
+<pad name="P$2" x="7.59" y="3.5" drill="1.6" diameter="3.5"/>
+<pad name="P$3" x="12.67" y="3.5" drill="1.6" diameter="3.5"/>
+<pad name="P$4" x="17.75" y="3.5" drill="1.6" diameter="3.5"/>
+<pad name="P$5" x="22.83" y="3.5" drill="1.6" diameter="3.5"/>
+<pad name="P$6" x="27.91" y="3.5" drill="1.6" diameter="3.5"/>
+<pad name="P$7" x="32.99" y="3.5" drill="1.6" diameter="3.5"/>
+<wire x1="1.1" y1="5" x2="4.1" y2="5" width="0.127" layer="21" curve="-180"/>
+<wire x1="6.1" y1="5" x2="9.1" y2="5" width="0.127" layer="21" curve="-180"/>
+<wire x1="11.2" y1="5" x2="14.2" y2="5" width="0.127" layer="21" curve="-180"/>
+<wire x1="16.2" y1="5" x2="19.2" y2="5" width="0.127" layer="21" curve="-180"/>
+<wire x1="21.4" y1="5" x2="24.4" y2="5" width="0.127" layer="21" curve="-180"/>
+<wire x1="26.4" y1="5" x2="29.4" y2="5" width="0.127" layer="21" curve="-180"/>
+<wire x1="31.5" y1="5" x2="34.5" y2="5" width="0.127" layer="21" curve="-180"/>
+<wire x1="4.1" y1="5" x2="6.1" y2="5" width="0.127" layer="21"/>
+<wire x1="9.1" y1="5" x2="11.2" y2="5" width="0.127" layer="21"/>
+<wire x1="14.2" y1="5" x2="16.2" y2="5" width="0.127" layer="21"/>
+<wire x1="19.2" y1="5" x2="21.4" y2="5" width="0.127" layer="21"/>
+<wire x1="21.4" y1="5" x2="21.4" y2="5.1" width="0.127" layer="21"/>
+<wire x1="24.4" y1="5" x2="26.4" y2="5" width="0.127" layer="21"/>
+<wire x1="29.4" y1="5" x2="31.5" y2="5" width="0.127" layer="21"/>
+<wire x1="34.5" y1="5" x2="35.5" y2="5" width="0.127" layer="21"/>
+<wire x1="1.1" y1="5" x2="0" y2="5" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="35.5" y2="1" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="AP3211">
-<wire x1="7.62" y1="20.32" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="22.86" y2="5.08" width="0.254" layer="94"/>
-<wire x1="22.86" y1="5.08" x2="22.86" y2="20.32" width="0.254" layer="94"/>
-<wire x1="22.86" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
-<pin name="BS" x="27.94" y="17.78" length="middle" rot="R180"/>
-<pin name="GND" x="15.24" y="0" length="middle" rot="R90"/>
-<pin name="FB" x="27.94" y="7.62" length="middle" rot="R180"/>
-<pin name="EN" x="2.54" y="7.62" length="middle"/>
-<pin name="IN" x="2.54" y="17.78" length="middle"/>
-<pin name="SW" x="27.94" y="12.7" length="middle" rot="R180"/>
+<symbol name="PBLT_7P">
+<pin name="P$1" x="22.86" y="10.16" visible="off" length="middle" rot="R270"/>
+<pin name="P$2" x="20.32" y="10.16" visible="off" length="middle" rot="R270"/>
+<pin name="P$3" x="17.78" y="10.16" visible="off" length="middle" rot="R270"/>
+<pin name="P$4" x="15.24" y="10.16" visible="off" length="middle" rot="R270"/>
+<pin name="P$5" x="12.7" y="10.16" visible="off" length="middle" rot="R270"/>
+<pin name="P$6" x="10.16" y="10.16" visible="off" length="middle" rot="R270"/>
+<pin name="P$7" x="7.62" y="10.16" visible="off" length="middle" rot="R270"/>
+<wire x1="27.94" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="27.94" y1="5.08" x2="27.94" y2="15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="15.24" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AP3211">
+<deviceset name="PLTB_7P_5MM">
 <gates>
-<gate name="G$1" symbol="AP3211" x="2.54" y="10.16"/>
+<gate name="G$1" symbol="PBLT_7P" x="-7.62" y="-7.62"/>
 </gates>
 <devices>
-<device name="" package="SOT-23-6">
+<device name="" package="PBLT_7P_5.08MM">
 <connects>
-<connect gate="G$1" pin="BS" pad="1"/>
-<connect gate="G$1" pin="EN" pad="4"/>
-<connect gate="G$1" pin="FB" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="5"/>
-<connect gate="G$1" pin="SW" pad="6"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
 </connects>
 <technologies>
 <technology name=""/>

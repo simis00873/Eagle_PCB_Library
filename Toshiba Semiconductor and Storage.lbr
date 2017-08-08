@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -72,54 +72,55 @@
 <library>
 <packages>
 <package name="SOT-23-3">
-<smd name="1" x="5.1816" y="7.2898" dx="1.016" dy="0.6096" layer="1"/>
-<smd name="2" x="5.1816" y="5.4102" dx="1.016" dy="0.6096" layer="1"/>
-<smd name="3" x="7.5184" y="6.35" dx="1.016" dy="0.6096" layer="1"/>
-<wire x1="7.0612" y1="6.985" x2="7.0612" y2="7.874" width="0.1524" layer="21"/>
-<wire x1="5.8928" y1="4.826" x2="7.0612" y2="4.826" width="0.1524" layer="21"/>
-<wire x1="7.0612" y1="4.826" x2="7.0612" y2="5.715" width="0.1524" layer="21"/>
-<wire x1="7.0612" y1="7.874" x2="6.6548" y2="7.874" width="0.1524" layer="21"/>
-<wire x1="6.6548" y1="7.874" x2="6.0452" y2="7.874" width="0.1524" layer="21"/>
-<wire x1="6.0452" y1="7.874" x2="5.8928" y2="7.874" width="0.1524" layer="21"/>
-<wire x1="5.6388" y1="6.6548" x2="5.6388" y2="6.0452" width="0.1524" layer="21"/>
-<wire x1="6.6548" y1="7.874" x2="6.0452" y2="7.874" width="0.1524" layer="21" curve="-180"/>
-<text x="4.3434" y="7.7724" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<wire x1="5.6388" y1="4.826" x2="7.0612" y2="4.826" width="0" layer="51"/>
-<wire x1="7.0612" y1="4.826" x2="7.0612" y2="6.0706" width="0" layer="51"/>
-<wire x1="7.0612" y1="6.0706" x2="7.0612" y2="6.6294" width="0" layer="51"/>
-<wire x1="7.0612" y1="6.6294" x2="7.0612" y2="7.874" width="0" layer="51"/>
-<wire x1="7.0612" y1="7.874" x2="6.6548" y2="7.874" width="0" layer="51"/>
-<wire x1="6.6548" y1="7.874" x2="6.0452" y2="7.874" width="0" layer="51"/>
-<wire x1="6.0452" y1="7.874" x2="5.6388" y2="7.874" width="0" layer="51"/>
-<wire x1="5.6388" y1="7.874" x2="5.6388" y2="7.5692" width="0" layer="51"/>
-<wire x1="5.6388" y1="7.5692" x2="5.6388" y2="7.0104" width="0" layer="51"/>
-<wire x1="5.6388" y1="7.0104" x2="5.6388" y2="5.6896" width="0" layer="51"/>
-<wire x1="5.6388" y1="7.5692" x2="5.1054" y2="7.5692" width="0" layer="51"/>
-<wire x1="5.1054" y1="7.5692" x2="5.1054" y2="7.0104" width="0" layer="51"/>
-<wire x1="5.1054" y1="7.0104" x2="5.6388" y2="7.0104" width="0" layer="51"/>
-<wire x1="5.6388" y1="4.826" x2="5.6388" y2="5.1308" width="0" layer="51"/>
-<wire x1="5.6388" y1="5.1308" x2="5.6388" y2="5.6896" width="0" layer="51"/>
-<wire x1="5.6388" y1="5.6896" x2="5.1054" y2="5.6896" width="0" layer="51"/>
-<wire x1="5.1054" y1="5.6896" x2="5.1054" y2="5.1308" width="0" layer="51"/>
-<wire x1="5.1054" y1="5.1308" x2="5.6388" y2="5.1308" width="0" layer="51"/>
-<wire x1="7.0612" y1="6.0706" x2="7.5946" y2="6.0706" width="0" layer="51"/>
-<wire x1="7.5946" y1="6.0706" x2="7.5946" y2="6.6294" width="0" layer="51"/>
-<wire x1="7.5946" y1="6.6294" x2="7.0612" y2="6.6294" width="0" layer="51"/>
-<wire x1="6.6548" y1="7.874" x2="6.0452" y2="7.874" width="0" layer="51" curve="-180"/>
-<text x="4.3434" y="7.7724" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="2.8956" y="8.89" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="2.8956" y="1.905" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-1.1684" y="0.9398" dx="1.016" dy="0.6096" layer="1"/>
+<smd name="2" x="-1.1684" y="-0.9398" dx="1.016" dy="0.6096" layer="1"/>
+<smd name="3" x="1.1684" y="0" dx="1.016" dy="0.6096" layer="1"/>
+<wire x1="0.7112" y1="0.635" x2="0.7112" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.4572" y1="-1.524" x2="0.7112" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="-1.524" x2="0.7112" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.7112" y1="1.524" x2="0.3048" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="1.524" x2="-0.4572" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-0.7112" y1="0.3048" x2="-0.7112" y2="-0.3048" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="21" curve="-180"/>
+<text x="-2.0066" y="1.4224" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<wire x1="-0.7112" y1="-1.524" x2="0.7112" y2="-1.524" width="0" layer="51"/>
+<wire x1="0.7112" y1="-1.524" x2="0.7112" y2="-0.2794" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.2794" x2="0.7112" y2="0.2794" width="0" layer="51"/>
+<wire x1="0.7112" y1="0.2794" x2="0.7112" y2="1.524" width="0" layer="51"/>
+<wire x1="0.7112" y1="1.524" x2="0.3048" y2="1.524" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.524" x2="-0.7112" y2="1.524" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.524" x2="-0.7112" y2="1.2192" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.2192" x2="-0.7112" y2="0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="0.6604" x2="-0.7112" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="1.2192" x2="-1.2446" y2="1.2192" width="0" layer="51"/>
+<wire x1="-1.2446" y1="1.2192" x2="-1.2446" y2="0.6604" width="0" layer="51"/>
+<wire x1="-1.2446" y1="0.6604" x2="-0.7112" y2="0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.524" x2="-0.7112" y2="-1.2192" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-1.2192" x2="-0.7112" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-0.7112" y1="-0.6604" x2="-1.2446" y2="-0.6604" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-0.6604" x2="-1.2446" y2="-1.2192" width="0" layer="51"/>
+<wire x1="-1.2446" y1="-1.2192" x2="-0.7112" y2="-1.2192" width="0" layer="51"/>
+<wire x1="0.7112" y1="-0.2794" x2="1.2446" y2="-0.2794" width="0" layer="51"/>
+<wire x1="1.2446" y1="-0.2794" x2="1.2446" y2="0.2794" width="0" layer="51"/>
+<wire x1="1.2446" y1="0.2794" x2="0.7112" y2="0.2794" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0" layer="51" curve="-180"/>
+<text x="-2.0066" y="1.4224" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
 <symbol name="SSM3K324RLFTR-ND">
-<wire x1="5.08" y1="17.78" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
-<wire x1="25.4" y1="2.54" x2="25.4" y2="17.78" width="0.254" layer="94"/>
-<wire x1="25.4" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
-<pin name="G" x="10.16" y="-2.54" length="middle" rot="R90"/>
-<pin name="S" x="20.32" y="-2.54" length="middle" rot="R90"/>
-<pin name="D" x="15.24" y="22.86" length="middle" rot="R270"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="G" x="-5.08" y="-12.7" length="middle" rot="R90"/>
+<pin name="S" x="5.08" y="-12.7" length="middle" rot="R90"/>
+<pin name="D" x="0" y="12.7" length="middle" rot="R270"/>
+<text x="5.08" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
