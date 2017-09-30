@@ -12101,7 +12101,7 @@ source  http://products.analog.com/products/info.asp?product=OP400</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM324" prefix="IC">
+<deviceset name="LM324" prefix="U">
 <description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="OPAMP" x="15.24" y="10.16" swaplevel="1"/>
@@ -12623,7 +12623,7 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="*555" prefix="IC">
+<deviceset name="*555" prefix="U">
 <description>&lt;b&gt;TIMER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="555" x="0" y="2.54"/>
