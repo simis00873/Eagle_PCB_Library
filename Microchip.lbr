@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -156,7 +156,7 @@
 </layers>
 <library>
 <packages>
-<package name="SOT23-5">
+<package name="SOT-23-5">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.4294" x2="1.4224" y2="-0.4294" width="0.2032" layer="21"/>
 <wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
@@ -263,6 +263,28 @@
 <rectangle x1="0.2025" y1="-2.3569" x2="0.4463" y2="-1.6256" layer="51"/>
 <rectangle x1="0.8525" y1="-2.3569" x2="1.0963" y2="-1.6256" layer="51"/>
 </package>
+<package name="SOT-23-6">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
+<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
+<wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
+<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
+<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
+<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
+<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
+<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP73831">
@@ -321,6 +343,18 @@
 <text x="-10.16" y="12.7" size="1.27" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="MCP1640/B/C/D">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="2.54" length="middle"/>
+<pin name="EN" x="-12.7" y="-5.08" length="middle"/>
+<pin name="PGND" x="0" y="-17.78" length="middle" rot="R90"/>
+<pin name="VFB" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="VOUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SW" x="0" y="15.24" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MCP73831" prefix="U">
@@ -331,7 +365,7 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 <gate name="U" symbol="MCP73831" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-5">
+<device name="" package="SOT-23-5">
 <connects>
 <connect gate="U" pin="PROG" pad="5"/>
 <connect gate="U" pin="STAT" pad="1"/>
@@ -399,6 +433,26 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/21984a.pdf</description>
 <connect gate="A" pin="SHDN" pad="3"/>
 <connect gate="A" pin="VCC" pad="2"/>
 <connect gate="A" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP1640/B/C/D">
+<gates>
+<gate name="G$1" symbol="MCP1640/B/C/D" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-6">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="PGND" pad="2"/>
+<connect gate="G$1" pin="SW" pad="1"/>
+<connect gate="G$1" pin="VFB" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="6"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
