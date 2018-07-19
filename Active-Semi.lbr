@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -75,10 +76,10 @@
 <library>
 <packages>
 <package name="SOP-8EP">
-<wire x1="-0.5334" y1="8.0772" x2="-0.5334" y2="3.3528" width="0.127" layer="21"/>
-<wire x1="-0.5334" y1="3.3528" x2="3.0734" y2="3.3528" width="0.127" layer="21"/>
-<wire x1="3.0734" y1="3.3528" x2="3.0734" y2="8.0772" width="0.127" layer="21"/>
-<wire x1="3.0734" y1="8.0772" x2="-0.5334" y2="8.0772" width="0.127" layer="21"/>
+<wire x1="-0.5334" y1="8.0772" x2="-0.5334" y2="3.3528" width="0.2032" layer="21"/>
+<wire x1="-0.5334" y1="3.3528" x2="3.0734" y2="3.3528" width="0.2032" layer="21"/>
+<wire x1="3.0734" y1="3.3528" x2="3.0734" y2="8.0772" width="0.2032" layer="21"/>
+<wire x1="3.0734" y1="8.0772" x2="-0.5334" y2="8.0772" width="0.2032" layer="21"/>
 <circle x="0.0254" y="7.5184" radius="0.3556" width="0.0508" layer="21"/>
 <smd name="1" x="-1.4732" y="7.62" dx="1.524" dy="0.6096" layer="1"/>
 <smd name="8" x="4.0132" y="7.62" dx="1.524" dy="0.6096" layer="1"/>
@@ -88,8 +89,8 @@
 <smd name="6" x="4.0132" y="5.08" dx="1.524" dy="0.6096" layer="1"/>
 <smd name="4" x="-1.4732" y="3.81" dx="1.524" dy="0.6096" layer="1"/>
 <smd name="5" x="4.0132" y="3.81" dx="1.524" dy="0.6096" layer="1"/>
-<text x="0.508" y="1.7145" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-0.762" y="8.4455" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.762" y="1.7145" size="0.8636" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.762" y="8.4455" size="0.8636" layer="25" ratio="10">&gt;NAME</text>
 <text x="2.032" y="6.858" size="1.016" layer="21" ratio="10">8</text>
 <rectangle x1="-1.6002" y1="7.4422" x2="-0.5842" y2="7.7978" layer="27"/>
 <rectangle x1="-1.6002" y1="6.1722" x2="-0.5842" y2="6.5278" layer="27"/>
@@ -119,6 +120,7 @@
 </symbols>
 <devicesets>
 <deviceset name="ACT4513">
+<description>Wide-Input Sensorless CC/CV Step-Down DC/DC Converter</description>
 <gates>
 <gate name="G$1" symbol="ACT4513" x="7.62" y="25.4"/>
 </gates>
@@ -135,7 +137,10 @@
 <connect gate="G$1" pin="SW" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="Active-Semi" constant="no"/>
+<attribute name="MPN" value="ACT4513YH-T" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
